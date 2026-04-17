@@ -2,233 +2,129 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Niko · Azeroth Portfolio</title>
-<meta name="description" content="Personal portfolio of Niko — rendered as a World of Warcraft interface." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap" />
-<link rel="icon" href="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Niko Noll — Founder, Product</title>
+<meta name="description" content="Niko Noll — founder of ProductAnalyst.ai and Juttu. Product builder and coach." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:title" content="Niko Noll — Founder, Product" />
+<meta property="og:description" content="Founder of ProductAnalyst.ai and Juttu. Product builder and coach." />
+<link rel="icon" href="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rubick.png" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div class="sky"></div>
+<main class="hud">
 
-<header class="topbar">
-  <div class="zone-text">Dalaran, Crystalsong Forest</div>
-  <div class="clock" id="clock">--:--</div>
-</header>
-
-<!-- PLAYER UNIT FRAME -->
-<section class="unit-frame player" aria-label="Player frame">
-  <img class="portrait" src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" alt="Mage class icon" />
-  <div class="frame-body">
-    <div class="name-row">
-      <span class="name">Niko</span>
-      <span class="level">Lvl 99</span>
+  <section class="hero-card">
+    <div class="portrait-wrap">
+      <img class="portrait" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rubick.png" alt="Rubick, the Grand Magus" />
+      <span class="lvl" aria-label="Level 30">30</span>
     </div>
-    <div class="subtitle">Human · Mage · Kirin Tor</div>
-    <div class="bar hp"><span style="width:100%">21,480 / 21,480</span></div>
-    <div class="bar mana"><span style="width:100%">18,240 / 18,240</span></div>
-  </div>
-</section>
-
-<!-- TARGET: VISITOR FRAME -->
-<section class="unit-frame target" aria-label="Target frame">
-  <img class="portrait" src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_human_02.jpg" alt="Visitor portrait" />
-  <div class="frame-body">
-    <div class="name-row">
-      <span class="name">Visitor</span>
-      <span class="level friendly">Lvl ??</span>
-    </div>
-    <div class="subtitle">Friendly · &lt;Guest&gt;</div>
-    <div class="bar hp"><span style="width:100%">&nbsp;</span></div>
-  </div>
-</section>
-
-<!-- MINIMAP -->
-<aside class="minimap" aria-label="Minimap navigation">
-  <div class="minimap-ring">
-    <div class="minimap-inner">
-      <button class="mm-pin" style="--x:50%;--y:15%" data-scroll="about" data-tip="About · press to scroll">?</button>
-      <button class="mm-pin" style="--x:82%;--y:45%" data-scroll="quests" data-tip="Quest Log · Projects">!</button>
-      <button class="mm-pin" style="--x:55%;--y:78%" data-scroll="experience" data-tip="Experience Log">X</button>
-      <button class="mm-pin" style="--x:20%;--y:55%" data-scroll="contact" data-tip="Contact · Whisper">@</button>
-    </div>
-    <div class="minimap-label">Dalaran</div>
-  </div>
-</aside>
-
-<!-- MAIN QUEST LOG PANEL -->
-<main class="questlog" id="top">
-
-  <div class="panel" id="about">
-    <div class="panel-header">
-      <span class="panel-title">Character</span>
-      <span class="panel-sub">Biography</span>
-    </div>
-    <div class="panel-body">
-      <p><span class="quality-epic">Niko</span> is a <span class="quality-rare">founder</span> and <span class="quality-rare">builder</span> crafting things on the internet. [Replace this bio with your own — a few sentences on what you do, what you care about, and what you are currently working on.]</p>
-      <ul class="stats">
-        <li><span class="stat-k">Strength</span><span class="stat-v">[your strength]</span></li>
-        <li><span class="stat-k">Agility</span><span class="stat-v">[your agility]</span></li>
-        <li><span class="stat-k">Intellect</span><span class="stat-v">[your intellect]</span></li>
-        <li><span class="stat-k">Spirit</span><span class="stat-v">[your spirit]</span></li>
+    <div class="hero-meta">
+      <h1>Niko Noll</h1>
+      <p class="title">Founder · Product · Builder</p>
+      <ul class="attrs" aria-label="Primary attributes">
+        <li><span class="a a-str" title="Strength"></span><b>9y</b><i>experience</i></li>
+        <li><span class="a a-agi" title="Agility"></span><b>3</b><i>ventures</i></li>
+        <li class="primary"><span class="a a-int" title="Intelligence"></span><b>∞</b><i>curiosity</i></li>
       </ul>
     </div>
-  </div>
+  </section>
 
-  <div class="panel" id="quests">
-    <div class="panel-header">
-      <span class="panel-title">Quest Log</span>
-      <span class="panel-sub">Active Projects · 3 / 25</span>
-    </div>
-    <div class="panel-body">
-      <ol class="quests">
-        <li class="quest">
-          <span class="quest-marker epic">!</span>
-          <div class="quest-text">
-            <a class="quality-epic" href="#" data-tip="Epic · Click to view">Project Alpha</a>
-            <div class="quest-desc">A short description of what this project is and why it matters.</div>
-            <div class="quest-objective">Objective: ship v1 · <span class="done">(3/3)</span></div>
-          </div>
-        </li>
-        <li class="quest">
-          <span class="quest-marker rare">!</span>
-          <div class="quest-text">
-            <a class="quality-rare" href="#" data-tip="Rare · Click to view">Project Beta</a>
-            <div class="quest-desc">Another project. Replace this with real content.</div>
-            <div class="quest-objective">Objective: reach 1k users · <span class="pending">(420/1000)</span></div>
-          </div>
-        </li>
-        <li class="quest">
-          <span class="quest-marker uncommon">!</span>
-          <div class="quest-text">
-            <a class="quality-uncommon" href="#" data-tip="Uncommon · Click to view">Project Gamma</a>
-            <div class="quest-desc">A side quest you are exploring.</div>
-            <div class="quest-objective">Objective: validate idea · <span class="pending">(in progress)</span></div>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
+  <section class="abilities" aria-label="Quick links">
+    <a class="ability" href="https://www.linkedin.com/in/niko-noll/" target="_blank" rel="noopener">
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/rubick_telekinesis.png" alt="" />
+      <span class="ab-name">LinkedIn</span>
+      <span class="ab-key">Q</span>
+    </a>
+    <a class="ability" href="mailto:niko@juttu.co">
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/rubick_fade_bolt.png" alt="" />
+      <span class="ab-name">Email</span>
+      <span class="ab-key">W</span>
+    </a>
+    <a class="ability" href="https://github.com/nikoatwork" target="_blank" rel="noopener">
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/rubick_null_field.png" alt="" />
+      <span class="ab-name">GitHub</span>
+      <span class="ab-key">E</span>
+    </a>
+    <a class="ability ultimate" href="https://juttu.co" target="_blank" rel="noopener">
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/rubick_spell_steal.png" alt="" />
+      <span class="ab-name">juttu.co</span>
+      <span class="ab-key">R</span>
+    </a>
+  </section>
 
-  <div class="panel" id="experience">
-    <div class="panel-header">
-      <span class="panel-title">Achievements</span>
-      <span class="panel-sub">Experience · Past Raids</span>
-    </div>
-    <div class="panel-body">
-      <ul class="achievements">
-        <li>
-          <img class="ach-icon" src="https://wow.zamimg.com/images/wow/icons/large/achievement_guildperk_everybodysfriend.jpg" alt="" />
-          <div>
-            <div class="ach-name quality-epic">[Company] — Role</div>
-            <div class="ach-sub">2023 – Present · short summary of what you did</div>
-          </div>
-        </li>
-        <li>
-          <img class="ach-icon" src="https://wow.zamimg.com/images/wow/icons/large/achievement_boss_lichking.jpg" alt="" />
-          <div>
-            <div class="ach-name quality-rare">[Previous Company] — Role</div>
-            <div class="ach-sub">20XX – 2023 · what you shipped</div>
-          </div>
-        </li>
-        <li>
-          <img class="ach-icon" src="https://wow.zamimg.com/images/wow/icons/large/achievement_level_80.jpg" alt="" />
-          <div>
-            <div class="ach-name quality-rare">[Education / Milestone]</div>
-            <div class="ach-sub">20XX · one line</div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <section class="bio">
+    <p>Building <a href="https://productanalyst.ai" target="_blank" rel="noopener">ProductAnalyst.ai</a> and <a href="https://juttu.co" target="_blank" rel="noopener">Juttu</a>. Previously product at <span class="accent">New Work SE (XING)</span>, then coaching product teams across Europe. I like shipping small, useful things.</p>
+  </section>
 
-  <div class="panel" id="contact">
-    <div class="panel-header">
-      <span class="panel-title">Whisper</span>
-      <span class="panel-sub">Contact</span>
-    </div>
-    <div class="panel-body">
-      <p>Send a whisper to <a class="quality-epic" href="mailto:niko@juttu.co">niko@juttu.co</a> or click a spell on the action bar below.</p>
-    </div>
-  </div>
+  <section class="matches">
+    <header class="section-head">
+      <h2>Match History</h2>
+      <span class="legend"><i class="dot win"></i> Ongoing <i class="dot end"></i> Completed</span>
+    </header>
+
+    <ol class="match-list">
+
+      <li class="match">
+        <div class="match-icon"><span class="dot win"></span></div>
+        <div class="match-main">
+          <h3>ProductAnalyst.ai · <span class="role">Co-Founder</span></h3>
+          <p class="match-sub">Feb 2026 – Present</p>
+        </div>
+        <div class="match-stats">
+          <span class="stat"><b>3</b><i>mo</i></span>
+        </div>
+      </li>
+
+      <li class="match">
+        <div class="match-icon"><span class="dot win"></span></div>
+        <div class="match-main">
+          <h3>Juttu · <span class="role">Founder</span></h3>
+          <p class="match-sub">Feb 2024 – Present · Remote</p>
+          <p class="match-desc">Plug-and-play cancel flow that shows each customer a personalised offer the moment they hit "Cancel". Reduces cancellations by up to 30%.</p>
+        </div>
+        <div class="match-stats">
+          <span class="stat"><b>2y</b><i>3mo</i></span>
+        </div>
+      </li>
+
+      <li class="match">
+        <div class="match-icon"><span class="dot end"></span></div>
+        <div class="match-main">
+          <h3>Niko at Work · <span class="role">Product Coach / Advisor</span></h3>
+          <p class="match-sub">Jan 2022 – Feb 2025 · Freelance, Remote</p>
+          <p class="match-desc">Coaching and advisory for JobRad SE, Europace AG, Burda Media, Holi GmbH, and New Work SE (XING). Go-to-market and MVP work with 2trde, monetisation discovery for Nioomi, audio-editing product work with Fountain.fm.</p>
+        </div>
+        <div class="match-stats">
+          <span class="stat"><b>3y</b><i>2mo</i></span>
+        </div>
+      </li>
+
+      <li class="match series">
+        <div class="match-icon"><span class="dot end"></span></div>
+        <div class="match-main">
+          <h3>New Work SE (XING)</h3>
+          <p class="match-sub">Aug 2017 – Dec 2021 · Munich</p>
+          <ul class="sub-matches">
+            <li><b>Senior Product Manager</b> · Mar 2021 – Dec 2021 — strategy, integrations, people management across three functional teams.</li>
+            <li><b>Product Manager</b> · Sep 2018 – Mar 2021 — B2B pricing strategy, mobile-first B2C, SEO + CRO, then two cross-functional teams.</li>
+            <li><b>Junior Software Engineer (Fullstack)</b> · Aug 2017 – Oct 2018 — migrated SSR Rails → ReactJS, tech-lead on project initiatives.</li>
+          </ul>
+        </div>
+        <div class="match-stats">
+          <span class="stat"><b>5y</b><i>4mo</i></span>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <footer class="foot">
+    <p>GG · <a href="https://www.linkedin.com/in/niko-noll/" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:niko@juttu.co">niko@juttu.co</a></p>
+  </footer>
 
 </main>
 
-<!-- CHAT FRAME -->
-<section class="chat-frame" aria-label="Chat frame">
-  <div class="chat-tabs">
-    <button class="tab active">General</button>
-    <button class="tab">Trade</button>
-    <button class="tab">LocalDefense</button>
-    <button class="tab">LFG</button>
-  </div>
-  <div class="chat-log">
-    <div class="chat-line"><span class="chan general">[General]</span> <span class="who">[Server]</span>: Welcome to Niko's realm. Hover spells for tooltips.</div>
-    <div class="chat-line"><span class="chan say">[Say]</span> <span class="who quality-epic">Niko</span>: Currently questing on [current focus] — replace me.</div>
-    <div class="chat-line"><span class="chan yell">[Yell]</span> <span class="who quality-rare">Niko</span>: Shipped [thing] — link in the action bar.</div>
-    <div class="chat-line sys">You have received a whisper. Use the <span class="quality-epic">Whisper</span> spell to reply.</div>
-  </div>
-</section>
-
-<!-- ACTION BAR -->
-<nav class="action-bar" aria-label="Links">
-  <a class="slot" href="https://github.com/nikoatwork" target="_blank" rel="noopener"
-     data-tip="Summon GitHub\n\nView the tome of commits.\n\n<span class='tt-sub'>Left click: opens in new tab</span>"
-     data-key="1">
-    <img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_11.jpg" alt="GitHub" />
-    <span class="keybind">1</span>
-  </a>
-  <a class="slot" href="mailto:niko@juttu.co"
-     data-tip="Send Whisper\n\nEmail niko@juttu.co\n\n<span class='tt-sub'>Instant cast</span>"
-     data-key="2">
-    <img src="https://wow.zamimg.com/images/wow/icons/large/inv_letter_18.jpg" alt="Email" />
-    <span class="keybind">2</span>
-  </a>
-  <a class="slot" href="https://twitter.com/nikoatwork" target="_blank" rel="noopener"
-     data-tip="Shout on X (Twitter)\n\nAOE announcement.\n\n<span class='tt-sub'>30 yard range</span>"
-     data-key="3">
-    <img src="https://wow.zamimg.com/images/wow/icons/large/inv_feather_13.jpg" alt="X" />
-    <span class="keybind">3</span>
-  </a>
-  <a class="slot" href="https://linkedin.com/in/nikoatwork" target="_blank" rel="noopener"
-     data-tip="Scroll of Guild Recruitment\n\nLinkedIn profile.\n\n<span class='tt-sub'>Passive</span>"
-     data-key="4">
-    <img src="https://wow.zamimg.com/images/wow/icons/large/inv_scroll_05.jpg" alt="LinkedIn" />
-    <span class="keybind">4</span>
-  </a>
-  <a class="slot" href="https://juttu.co" target="_blank" rel="noopener"
-     data-tip="Portal: Juttu.co\n\nTeleport to guild hall.\n\n<span class='tt-sub'>10 second cast</span>"
-     data-key="5">
-    <img src="https://wow.zamimg.com/images/wow/icons/large/spell_arcane_portaldalaran.jpg" alt="juttu.co" />
-    <span class="keybind">5</span>
-  </a>
-  <span class="slot empty" data-tip="Empty Slot"><span class="keybind">6</span></span>
-  <span class="slot empty" data-tip="Empty Slot"><span class="keybind">7</span></span>
-  <span class="slot empty" data-tip="Empty Slot"><span class="keybind">8</span></span>
-  <span class="slot empty" data-tip="Empty Slot"><span class="keybind">9</span></span>
-  <span class="slot empty" data-tip="Empty Slot"><span class="keybind">0</span></span>
-  <span class="slot empty" data-tip="Empty Slot"><span class="keybind">-</span></span>
-  <a class="slot" href="#top"
-     data-tip="Hearthstone\n\nReturn to character overview.\n\n<span class='tt-sub'>10 min cooldown</span>"
-     data-key="=">
-    <img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_rune_01.jpg" alt="Top" />
-    <span class="keybind">=</span>
-  </a>
-</nav>
-
-<!-- XP BAR -->
-<div class="xp-bar" data-tip="Experience: 0 / 13,800,000">
-  <span style="width:62%"></span>
-  <em>Rested</em>
-</div>
-
-<!-- TOOLTIP -->
-<div id="tooltip" class="tooltip" role="status"></div>
-
-<script src="app.js"></script>
 </body>
 </html>
